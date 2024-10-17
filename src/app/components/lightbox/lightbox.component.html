@@ -15,8 +15,8 @@
 
 <ng-template #gallery let-lightbox>
     <div class="w-full h-full relative">
-        <img (click)="toggleLightBox(lightbox)" src="{{displayedImg}}" id="image1" [ngClass]="!fadeImage ? 'opacity-100 delay-250' : 'opacity-0'" class="absolute top-0 left-0 w-full h-full pointer-events-none md:pointer-events-auto md:cursor-pointer md:rounded-xl transition ease-in-out duration-300 object-cover w-full">
-        <img (click)="toggleLightBox(lightbox)" src="{{displayedImg}}" id="image2" [ngClass]="fadeImage ? 'opacity-100 delay-250' : 'opacity-0'" class="absolute top-0 left-0 w-full h-full pointer-events-none md:pointer-events-auto md:cursor-pointer md:rounded-xl transition ease-in-out duration-300 object-cover w-full">
+        <img (click)="toggleLightBox(lightbox)" src="{{displayedImg}}" id="image1" [ngClass]="!fadeImage ? 'opacity-100 delay-250' : 'opacity-0'" class="absolute top-0 left-0 h-full pointer-events-none md:pointer-events-auto md:cursor-pointer md:rounded-xl transition ease-in-out duration-300 object-cover w-full">
+        <img (click)="toggleLightBox(lightbox)" src="{{displayedImg}}" id="image2" [ngClass]="fadeImage ? 'opacity-100 delay-250' : 'opacity-0'" class="absolute top-0 left-0 h-full pointer-events-none md:pointer-events-auto md:cursor-pointer md:rounded-xl transition ease-in-out duration-300 object-cover w-full">
     </div>
     <span [ngClass]="lightbox ? '-left-6' : 'md:hidden left-4'" (click)="prevImg()" class="bg-slate-200 cursor-pointer rounded-full absolute w-12 h-12 top-48 flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 opacity-100 font-bold">

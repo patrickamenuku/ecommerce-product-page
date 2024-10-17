@@ -82,7 +82,3 @@ Next time I would like to look at signals, maybe with a challenge that has more 
 ### Useful resources
 
 https://tailwindcss.com is the new Bible. Also official angular documentation.
-
-## Author
-
-- Frontend Mentor - [@thejollydrawker](https://www.frontendmentor.io/profile/thejollydrawker)
